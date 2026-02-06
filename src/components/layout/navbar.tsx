@@ -19,7 +19,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <Globe className="h-6 w-6 text-blue-600" />
           <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Global Aura-tech
+            Global Auratech
           </span>
         </Link>
 
