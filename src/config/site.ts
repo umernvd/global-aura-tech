@@ -7,26 +7,7 @@ export const siteConfig = {
     phone: "+1 (555) 123-4567",
     email: "contact@auratech.global",
   },
-  footerNav: [
-    {
-      title: "Services",
-      items: [
-        { label: "Chat Support", href: "/services#chat-support" },
-        { label: "Voice Support", href: "/services#voice-support" },
-        { label: "Email Support", href: "/services#email-support" },
-        { label: "Sales Support", href: "/services#sales-support" },
-      ],
-    },
-    {
-      title: "Company",
-      items: [
-        { label: "About Us", href: "/about" },
-        { label: "Careers", href: "/careers" },
-        { label: "Blog", href: "/blog" },
-        { label: "Privacy Policy", href: "/privacy" },
-      ],
-    },
-  ],
+  footerNav: [],
   socials: {
     facebook: "#",
     linkedin: "#",

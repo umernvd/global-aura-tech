@@ -34,27 +34,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Columns 2 & 3: Dynamic Navigation */}
-          {siteConfig.footerNav.map((section) => (
-            <div key={section.title} className="space-y-6">
-              <h3 className="text-lg font-bold tracking-wide text-white">
-                {section.title}
-              </h3>
-              <ul className="space-y-3">
-                {section.items.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-slate-400 hover:text-blue-400 transition-colors duration-200 block w-fit"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-
           {/* Column 4: Contact Info (Redesigned for readability) */}
           <div className="space-y-6">
             <h3 className="text-lg font-bold tracking-wide text-white">
@@ -69,7 +48,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Section: Copyright */}
-        <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div className="mt-6 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-slate-500">
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>

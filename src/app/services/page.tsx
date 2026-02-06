@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* Page Hero */}
-      <section className="relative flex min-h-[100px] flex-col items-center justify-center overflow-hidden bg-slate-900 px-4 py-24 text-center">
+      <section className="relative flex min-h-25 flex-col items-center justify-center overflow-hidden bg-slate-900 px-4 py-24 text-center">
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-blue-900/40 via-slate-900 to-slate-900" />
 

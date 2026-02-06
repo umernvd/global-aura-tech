@@ -16,7 +16,7 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl flex flex-col items-center gap-6 animate-in fade-in zoom-in duration-700">
+      <div className="relative z-10 max-w-4xl flex flex-col items-center text-center gap-6 animate-in fade-in zoom-in duration-700">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
           Empowering Global Connections through World-Class BPO Solutions
         </h1>
@@ -26,7 +26,7 @@ export function Hero() {
           Logistics, and Healthcare with precision and empathy.
         </p>
 
-        <div className="flex flex-wrap gap-4 mt-6">
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
           <Button
             asChild
             size="lg"
