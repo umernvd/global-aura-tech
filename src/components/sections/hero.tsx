@@ -3,22 +3,23 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-150 flex items-center justify-center text-center px-4 overflow-hidden bg-slate-900">
-      {/* Background Image with Overlay */}
+    <section className="relative w-full min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+      {/* Blurred background */}
       <div
-        className="absolute inset-0 z-0 opacity-40 bg-cover bg-center"
-        // Replace with your actual image path or remove style to use bg-slate-900 only
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/hero-globe.jpg')",
+          filter: "blur(4px)",
+        }}
       />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl flex flex-col items-center gap-6 animate-in fade-in zoom-in duration-700">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
-          Empowering Global Connections through{" "}
-          <span className="text-blue-500">World-Class BPO Solutions</span>
+          Empowering Global Connections through World-Class BPO Solutions
         </h1>
 
-        <p className="text-slate-200 text-lg md:text-xl max-w-2xl leading-relaxed">
+        <p className="text-slate-100 text-lg md:text-xl max-w-2xl leading-relaxed">
           Streamlining operations for the world's leading brands in Telecom,
           Logistics, and Healthcare with precision and empathy.
         </p>

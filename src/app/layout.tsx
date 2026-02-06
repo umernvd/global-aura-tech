@@ -1,8 +1,8 @@
-import { Inter, Lexend } from "next/font/google";
+import { Lexend, Manrope } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const lexend = Lexend({ subsets: ["latin"], variable: "--font-lexend" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export default function RootLayout({
   children,
@@ -11,8 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* 2. Add variables to body */}
       <body
-        className={`${inter.variable} ${lexend.variable} font-sans antialiased bg-slate-50 text-slate-900`}
+        className={`${lexend.variable} ${manrope.variable} font-sans antialiased bg-[#f6f7f8] text-[#111418]`}
       >
         {children}
       </body>

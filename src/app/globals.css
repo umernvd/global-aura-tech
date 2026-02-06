@@ -124,3 +124,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --font-display: var(--font-lexend);
+  --font-sans: var(--font-manrope);
+  --color-primary: #137fec;
+}

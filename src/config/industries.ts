@@ -14,7 +14,7 @@ export const industries = [
     icon: Smartphone,
     description:
       "Next-gen customer support, billing inquiries, and technical troubleshooting at scale.",
-    image: "/images/telecom-bg.jpg", // Make sure to add dummy images to public/images folder later
+    image: "/images/telecom.jpg", // Make sure to add dummy images to public/images folder later
   },
   {
     slug: "ride-hailing",
@@ -22,7 +22,7 @@ export const industries = [
     icon: Car,
     description:
       "Real-time driver dispatch support, rider safety monitoring, and dispute resolution.",
-    image: "/images/ride-hailing-bg.jpg",
+    image: "/images/ride-hailing.jpg",
   },
   {
     slug: "logistics",
@@ -30,7 +30,7 @@ export const industries = [
     icon: Truck,
     description:
       "Order management, fleet coordination, and seamless logistics tracking support.",
-    image: "/images/logistics-bg.jpg",
+    image: "/images/logistics.jpg",
   },
   {
     slug: "healthcare",
@@ -38,7 +38,7 @@ export const industries = [
     icon: Stethoscope,
     description:
       "HIPAA-compliant scheduling, patient intake processing, and telemedicine support.",
-    image: "/images/healthcare-bg.jpg",
+    image: "/images/healthcare.jpg",
   },
   {
     slug: "social-media",
@@ -46,7 +46,7 @@ export const industries = [
     icon: Share2,
     description:
       "Content moderation, community engagement management, and brand protection.",
-    image: "/images/social-bg.jpg",
+    image: "/images/social-media.jpg",
   },
   {
     slug: "fintech",
@@ -54,6 +54,6 @@ export const industries = [
     icon: CreditCard,
     description:
       "Fraud detection, KYC verification, and secure transaction monitoring.",
-    image: "/images/fintech-bg.jpg",
+    image: "/images/fintech.jpg",
   },
 ];
