@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { Hero } from "@/components/sections/hero";
 import { IndustryGrid } from "@/components/sections/industry-grid";
@@ -10,7 +11,7 @@ export default function Home() {
       <Hero />
       <IndustryGrid />
       <WhyChooseUs />
-      {/* You can add Footer here later */}
+      <Footer />
     </main>
   );
 }

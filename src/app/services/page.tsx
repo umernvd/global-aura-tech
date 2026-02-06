@@ -1,6 +1,7 @@
 import { services } from "@/config/services";
 import { ServiceRow } from "@/components/sections/service-row";
-import { Navbar } from "@/components/layout/navbar"; // Assuming you have this from previous steps
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
   title: "Services | Global Aura-tech",
@@ -43,6 +44,7 @@ export default function ServicesPage() {
           />
         ))}
       </div>
+      <Footer/>
     </main>
   );
 }
