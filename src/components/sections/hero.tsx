@@ -1,16 +1,18 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
       {/* Blurred background */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/hero-globe.jpg')",
-          filter: "blur(4px)",
-        }}
+      <Image
+        src="/images/hero-globe.jpg"
+        alt="Global network background"
+        fill
+        priority
+        className="absolute inset-0 z-0 object-cover object-center"
+        style={{ filter: "blur(4px)" }}
       />
 
       {/* Content */}
