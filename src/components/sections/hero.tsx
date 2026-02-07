@@ -1,48 +1,83 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center text-center px-4 overflow-hidden">
-      {/* Blurred background */}
-      <Image
-        src="/images/hero-globe.jpg"
-        alt="Global network background"
-        fill
-        priority
-        className="absolute inset-0 z-0 object-cover object-center"
-        style={{ filter: "blur(4px)" }}
-      />
+    <section className="relative w-full min-h-dvh flex items-center px-4 overflow-hidden pt-24 pb-12 bg-white">
+      {/* 1. RESPONSIVE VIDEO BACKGROUND */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover object-[75%_center] md:object-center w-full h-full"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl flex flex-col items-center text-center gap-6 animate-in fade-in zoom-in duration-700">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
-          Empowering Global Connections through World-Class BPO Solutions
-        </h1>
+        {/* Mobile readability gradient */}
+        <div className="absolute inset-0 bg-linear-to-t from-white/80 via-transparent to-transparent md:hidden" />
+      </div>
 
-        <p className="text-slate-100 text-lg md:text-xl max-w-2xl leading-relaxed">
-          Streamlining operations for the world's leading brands in Telecom,
-          Logistics, and Healthcare with precision and empathy.
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-4 mt-6">
-          <Button
-            asChild
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white border-0 text-base h-12 px-8"
+      {/* 2. ADAPTIVE CONTENT CONTAINER */}
+      <div className="container mx-auto relative z-10">
+        <div
+          className="max-w-4xl flex flex-col gap-6 animate-in fade-in zoom-in duration-700 
+          items-center text-center
+          md:items-start md:text-left
+        "
+        >
+          {/* Headline: Responsive Text Sizing */}
+          <h1
+            className="font-extrabold tracking-tight text-primary leading-[1.1]
+            text-4xl
+            sm:text-5xl
+            md:text-6xl lg:text-7xl
+          "
           >
-            <Link href="/services">Explore Services</Link>
-          </Button>
+            Empowering Global <br className="hidden md:block" />
+            Connections With
+            <br className="hidden md:block" />
+            <span className="text-blue-500"> Precision & Empathy</span>
+          </h1>
 
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="text-white border-white hover:bg-white/10 text-base h-12 px-8 bg-transparent"
+          {/* Description: Responsive Width */}
+          <p
+            className="text-slate-600 font-medium leading-relaxed
+            text-base max-w-sm
+            md:text-xl md:max-w-2xl
+          "
           >
-            <Link href="/contact">Partner With Us</Link>
-          </Button>
+            Streamlining operations for the world's leading brands in Telecom,
+            Logistics, and Healthcare with AI-driven support.
+          </p>
+
+          {/* Buttons: Adaptive Alignment */}
+          <div
+            className="flex flex-wrap gap-4 mt-4
+            justify-center
+            md:justify-start
+          "
+          >
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white text-base md:text-lg h-12 md:h-14 px-8 rounded-full shadow-lg transition-transform hover:-translate-y-1"
+            >
+              <Link href="/services">Explore Services</Link>
+            </Button>
+
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-2 border-primary/20 text-primary hover:bg-primary/5 bg-white/50 backdrop-blur-sm text-base md:text-lg h-12 md:h-14 px-8 rounded-full transition-transform hover:-translate-y-1"
+            >
+              <Link href="/contact">Partner With Us</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
