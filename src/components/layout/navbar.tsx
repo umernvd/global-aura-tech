@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Globe } from "lucide-react"; // Icons
+import Image from "next/image";
+import { Menu, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -16,8 +17,17 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white dark:bg-[#101922] dark:border-gray-800">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo Area */}
-        <Link href="/" className="flex items-center gap-2">
-          <Globe className="h-6 w-6 text-blue-600" />
+        <Link
+          href="/"
+          className="flex items-center gap-2"
+        >
+          <Image
+            src="/images/logo.jpeg"
+            alt="Global Auratech Logo"
+            width={40}
+            height={40}
+            className="rounded"
+          />
           <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
             Global Auratech
           </span>

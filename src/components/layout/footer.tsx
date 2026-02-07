@@ -1,14 +1,7 @@
 import Link from "next/link";
+import Image from "next/image"; // Add this import
 import { siteConfig } from "@/config/site";
-import {
-  Globe,
-  MapPin,
-  Phone,
-  Mail,
-  Facebook,
-  Linkedin,
-  Twitter,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,7 +12,13 @@ export function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2 group">
-              <Globe className="h-8 w-8 text-blue-500 group-hover:rotate-12 transition-transform" />
+              <Image
+                src="/images/logo.jpeg"
+                alt="Global Auratech Logo"
+                width={32}
+                height={32}
+                className="rounded group-hover:scale-110 transition-transform"
+              />
               <span className="text-xl font-bold tracking-tight">
                 {siteConfig.name}
               </span>
