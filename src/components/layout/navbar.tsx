@@ -17,10 +17,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-white dark:bg-[#101922] dark:border-gray-800">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         {/* Logo Area */}
-        <Link
-          href="/"
-          className="flex items-center gap-2"
-        >
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo.jpeg"
             alt="Global Auratech Logo"
@@ -44,8 +41,11 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-            Request a Quote
+          <Button
+            asChild
+            className="bg-blue-600 hover:bg-blue-700 text-white shadow-md"
+          >
+            <Link href="/contact">Request a Quote</Link>
           </Button>
         </nav>
 
@@ -68,8 +68,8 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                Request a Quote
+              <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
+                <Link href="/contact">Request a Quote</Link>
               </Button>
             </div>
           </SheetContent>
