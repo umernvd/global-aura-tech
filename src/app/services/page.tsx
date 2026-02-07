@@ -1,7 +1,5 @@
 import { services } from "@/config/services";
 import { ServiceRow } from "@/components/sections/service-row";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
   title: "Services | Global Aura-tech",
@@ -12,8 +10,6 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main className="flex min-h-screen flex-col bg-white dark:bg-background">
-      <Navbar />
-
       {/* Page Hero */}
       <section className="relative flex min-h-25 flex-col items-center justify-center overflow-hidden bg-slate-900 px-4 py-24 text-center">
         {/* Background Gradient */}
@@ -44,7 +40,6 @@ export default function ServicesPage() {
           />
         ))}
       </div>
-      <Footer/>
     </main>
   );
 }
