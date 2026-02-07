@@ -69,7 +69,7 @@ export function ContactForm() {
               <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
                 Full Name
               </label>
-              <Input {...register("name")} placeholder="e.g. Sarah Williams" />
+              <Input {...register("name")} />
               {errors.name && (
                 <p className="text-xs text-red-500">{errors.name.message}</p>
               )}
@@ -78,7 +78,7 @@ export function ContactForm() {
               <label className="text-sm font-medium text-slate-700 dark:text-slate-300">
                 Company Name
               </label>
-              <Input {...register("company")} placeholder="e.g. Acme Corp" />
+              <Input {...register("company")} />
               {errors.company && (
                 <p className="text-xs text-red-500">{errors.company.message}</p>
               )}
@@ -93,7 +93,6 @@ export function ContactForm() {
               </label>
               <Input
                 {...register("email")}
-                placeholder="name@company.com"
                 type="email"
               />
               {errors.email && (
