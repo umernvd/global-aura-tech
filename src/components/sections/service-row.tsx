@@ -40,7 +40,7 @@ export function ServiceRow({ service, isReversed }: ServiceProps) {
           {/* Text Side */}
           <div className="flex-1 space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-sm font-bold uppercase tracking-wider text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-bold uppercase tracking-wider text-primary dark:bg-primary/30">
                 <service.icon className="h-4 w-4" />
                 {service.subtitle}
               </div>
@@ -56,7 +56,7 @@ export function ServiceRow({ service, isReversed }: ServiceProps) {
 
             <Button
               size="lg"
-              className="h-12 rounded-lg bg-blue-600 px-8 text-base font-bold text-white shadow-lg shadow-blue-500/25 hover:bg-blue-700"
+              className="h-12 rounded-lg bg-primary px-8 text-base font-bold text-white shadow-lg shadow-primary/25 hover:bg-primary/90"
             >
               Get Started with {service.title.split(" ")[0]}
             </Button>
@@ -70,7 +70,7 @@ export function ServiceRow({ service, isReversed }: ServiceProps) {
                   key={idx}
                   className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:bg-slate-800 dark:ring-slate-700"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white dark:bg-slate-700 dark:text-blue-400">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white dark:bg-slate-700 dark:text-primary">
                     <feature.icon className="h-6 w-6" />
                   </div>
                   <h3 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">

@@ -7,7 +7,7 @@ export function IndustryGrid() {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="mb-4 font-display text-3xl font-bold text-[#111418] md:text-4xl">
+          <h2 className="mb-4 font-display text-3xl font-bold text-primary md:text-4xl">
             Industries We Serve
           </h2>
           <p className="text-lg text-gray-500">

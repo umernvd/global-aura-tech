@@ -5,7 +5,7 @@
 :root {
   --font-display: var(--font-lexend);
   --font-sans: var(--font-inter);
-  --color-primary: #137fec;
+  --color-primary: #013162;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -61,8 +61,8 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(31.528% 0.09914 254.027);
+  --primary-foreground: oklch(98.415% 0.00352 248.585);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Globe } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -25,7 +25,7 @@ export function Navbar() {
             height={40}
             className="rounded"
           />
-          <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+          <span className="text-xl font-bold tracking-tight text-primary dark:text-white">
             Global Auratech
           </span>
         </Link>
@@ -36,14 +36,14 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors dark:text-slate-300"
+              className="text-sm font-medium text-primary hover:text-blue-600 transition-colors dark:text-slate-300"
             >
               {link.name}
             </Link>
           ))}
           <Button
             asChild
-            className="bg-blue-600 hover:bg-blue-700 text-white shadow-md"
+            className="bg-primary hover:bg-blue-700 text-white shadow-md"
           >
             <Link href="/contact">Request a Quote</Link>
           </Button>
